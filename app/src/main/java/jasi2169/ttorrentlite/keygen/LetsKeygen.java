@@ -144,7 +144,7 @@ public class LetsKeygen extends AppCompatActivity {
                     j++;
                 }
 
-                for (int j = 0; j < 16; j++)
+                for (j = 0; j < 16; j++)
                 {
                     int m = (j * 29 + i) % a.length;
                     if (a[m].length > 0)
