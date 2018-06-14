@@ -143,12 +143,10 @@ public class LetsKeygen extends AppCompatActivity {
                     i += chararray[j];
                     j++;
                 }
-                j = 0;
-                int i1;
-                for (int i2 = 1; j < 16; i2 = i1)
+
+                for (int j = 0; j < 16; j++)
                 {
                     int m = (j * 29 + i) % a.length;
-                    i1 = i2;
                     if (a[m].length > 0)
                     {
                         k = 15 - j;
@@ -163,7 +161,6 @@ public class LetsKeygen extends AppCompatActivity {
                         serial[j] = (char) m;
 
                     }
-                    j++;
                 }
 
             } catch (Exception e) {
